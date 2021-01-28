@@ -8,8 +8,12 @@
 <body>
     {{.Content}}
     {{ range .Pages }}
-    <br>
-        {{ .Title }}
+    <ul>
+        <li><a href="{{.Permalink}}">{{.Title}}</a></li>
+    </ul>
+        {{ .Title }} 
+        {{ .Permalink }} <br>
+        
     {{ end }}
     
 </body>
